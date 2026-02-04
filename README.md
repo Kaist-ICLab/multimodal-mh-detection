@@ -64,22 +64,16 @@ We provide extracted and preprocessed features (in ML models/FEATURES or DL mode
 ### ⌚ Data Collected from Fitbit Wearable 
 | **Type** | **Data Field** | **Description** | **Sampling Rate** |
 |---------|---------------|-----------------|-------------------|
-| **Step count** | `timestamp` | Timestamp in milliseconds (UNIX time, UTC+000). | 1 min |
-|  | `value` | Number of steps recorded during a 1-minute interval using a 3-axis accelerometer. | 1 min |
-| **Distance** | `timestamp` | Timestamp in milliseconds (UNIX time, UTC+000). | 1 min |
-|  | `value` | Distance traveled during a 1-minute interval (miles). Calculated using GPS when available; otherwise estimated from steps and stride length (distance = steps × stride length). Stride length is approximated based on the user’s height and gender. | 1 min |
-| **Calorie** | `timestamp` | Timestamp in milliseconds (UNIX time, UTC+000). | Variable |
-|  | `value` | Calories burned during periods of activity above sedentary level (kilocalories, kcal). | Variable |
+| **Step count** | `value` | Number of steps recorded during a 1-minute interval using a 3-axis accelerometer. | 1 min |
+| **Distance** | `value` | Distance traveled during a 1-minute interval (miles). Calculated using GPS when available; otherwise estimated from steps and stride length (distance = steps × stride length). Stride length is approximated based on the user’s height and gender. | 1 min |
+| **Calorie** | `value` | Calories burned during periods of activity above sedentary level (kilocalories, kcal). | Variable |
 |  | `level` | Activity intensity level associated with calorie expenditure. | Variable |
 |  | `mets` | Metabolic equivalent of task (METs) corresponding to the activity. | Variable |
-| **Heart rate** | `timestamp` | Timestamp in milliseconds (UNIX time, UTC+000). | 1 sec |
-|  | `value` | Heart rate measurement (beats per minute). | 1 sec |
-| **Sleep** | `timestamp` | Timestamp of the sleep record in milliseconds (UNIX time, UTC+000). | Per sleep session |
-|  | `deep` | Total minutes spent in deep sleep stage. | Per sleep session |
+| **Heart rate** | `value` | Heart rate measurement (beats per minute). | 1 sec |
+| **Sleep** | `deep` | Total minutes spent in deep sleep stage. | Per sleep session |
 |  | `light` | Total minutes spent in light sleep stage. | Per sleep session |
 |  | `rem` | Total minutes spent in REM sleep stage. | Per sleep session |
 |  | `wake` | Total minutes spent awake during the sleep period. | Per sleep session |
-
 
 ### 📱 Mobile Data - Preprocessing 
 | **Type**               | **Raw Data**  | **Preprocessing**                                                                                                         |
