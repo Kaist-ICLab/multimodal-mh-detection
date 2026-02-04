@@ -61,6 +61,25 @@ We provide extracted and preprocessed features (in ML models/FEATURES or DL mode
 | Anxiety (GAD-2)    | 3. Over the past 1–2 hours, how often have you felt nervous, anxious, or on edge? <br> 4. How often have you been unable to stop or control worrying?                      | Not at all (0) – Very frequently (3) |
 
 
+### ⌚ Fitbit Wearable Data Collected
+| **File** | **Data Field** | **Description** | **Sampling Rate** |
+|---------|---------------|-----------------|-------------------|
+| **Fitbit/STEP_COUNT.csv** | `timestamp` | Timestamp in milliseconds (UNIX time, UTC+000). | 1 min |
+|  | `value` | Number of steps recorded during a 1-minute interval using a 3-axis accelerometer. | 1 min |
+| **Fitbit/DISTANCE.csv** | `timestamp` | Timestamp in milliseconds (UNIX time, UTC+000). | 1 min |
+|  | `value` | Distance traveled during a 1-minute interval (miles). Calculated using GPS when available; otherwise estimated from steps and stride length (distance = steps × stride length). Stride length is approximated based on the user’s height and gender. | 1 min |
+| **Fitbit/CALORIE.csv** | `timestamp` | Timestamp in milliseconds (UNIX time, UTC+000). | Variable |
+|  | `value` | Calories burned during periods of activity above sedentary level (kilocalories, kcal). | Variable |
+|  | `level` | Activity intensity level associated with calorie expenditure. | Variable |
+|  | `mets` | Metabolic equivalent of task (METs) corresponding to the activity. | Variable |
+| **Fitbit/HEART_RATE.csv** | `timestamp` | Timestamp in milliseconds (UNIX time, UTC+000). | 1 sec |
+|  | `value` | Heart rate measurement (beats per minute). | 1 sec |
+| **Fitbit/SLEEP.csv** | `timestamp` | Timestamp of the sleep record in milliseconds (UNIX time, UTC+000). | Per sleep session |
+|  | `deep` | Total minutes spent in deep sleep stage. | Per sleep session |
+|  | `light` | Total minutes spent in light sleep stage. | Per sleep session |
+|  | `rem` | Total minutes spent in REM sleep stage. | Per sleep session |
+|  | `wake` | Total minutes spent awake during the sleep period. | Per sleep session |
+
 
 ### 📱 Mobile Data - Preprocessing 
 | **Type**               | **Raw Data**  | **Preprocessing**                                                                                                         |
