@@ -62,19 +62,19 @@ We provide extracted and preprocessed features (in ML models/FEATURES or DL mode
 
 
 ### ⌚ Data Collected from Fitbit Wearable 
-| **File** | **Data Field** | **Description** | **Sampling Rate** |
+| **Type** | **Data Field** | **Description** | **Sampling Rate** |
 |---------|---------------|-----------------|-------------------|
-| **Fitbit/STEP_COUNT.csv** | `timestamp` | Timestamp in milliseconds (UNIX time, UTC+000). | 1 min |
+| **Step count** | `timestamp` | Timestamp in milliseconds (UNIX time, UTC+000). | 1 min |
 |  | `value` | Number of steps recorded during a 1-minute interval using a 3-axis accelerometer. | 1 min |
-| **Fitbit/DISTANCE.csv** | `timestamp` | Timestamp in milliseconds (UNIX time, UTC+000). | 1 min |
+| **Distance** | `timestamp` | Timestamp in milliseconds (UNIX time, UTC+000). | 1 min |
 |  | `value` | Distance traveled during a 1-minute interval (miles). Calculated using GPS when available; otherwise estimated from steps and stride length (distance = steps × stride length). Stride length is approximated based on the user’s height and gender. | 1 min |
-| **Fitbit/CALORIE.csv** | `timestamp` | Timestamp in milliseconds (UNIX time, UTC+000). | Variable |
+| **Calorie** | `timestamp` | Timestamp in milliseconds (UNIX time, UTC+000). | Variable |
 |  | `value` | Calories burned during periods of activity above sedentary level (kilocalories, kcal). | Variable |
 |  | `level` | Activity intensity level associated with calorie expenditure. | Variable |
 |  | `mets` | Metabolic equivalent of task (METs) corresponding to the activity. | Variable |
-| **Fitbit/HEART_RATE.csv** | `timestamp` | Timestamp in milliseconds (UNIX time, UTC+000). | 1 sec |
+| **Heart rate** | `timestamp` | Timestamp in milliseconds (UNIX time, UTC+000). | 1 sec |
 |  | `value` | Heart rate measurement (beats per minute). | 1 sec |
-| **Fitbit/SLEEP.csv** | `timestamp` | Timestamp of the sleep record in milliseconds (UNIX time, UTC+000). | Per sleep session |
+| **Sleep** | `timestamp` | Timestamp of the sleep record in milliseconds (UNIX time, UTC+000). | Per sleep session |
 |  | `deep` | Total minutes spent in deep sleep stage. | Per sleep session |
 |  | `light` | Total minutes spent in light sleep stage. | Per sleep session |
 |  | `rem` | Total minutes spent in REM sleep stage. | Per sleep session |
