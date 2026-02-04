@@ -61,7 +61,7 @@ We provide extracted and preprocessed features (in ML models/FEATURES or DL mode
 | Anxiety (GAD-2)    | 3. Over the past 1–2 hours, how often have you felt nervous, anxious, or on edge? <br> 4. How often have you been unable to stop or control worrying?                      | Not at all (0) – Very frequently (3) |
 
 
-### ⌚ Fitbit Wearable Data Collected
+### ⌚ Data Collected from Fitbit Wearable 
 | **File** | **Data Field** | **Description** | **Sampling Rate** |
 |---------|---------------|-----------------|-------------------|
 | **Fitbit/STEP_COUNT.csv** | `timestamp` | Timestamp in milliseconds (UNIX time, UTC+000). | 1 min |
